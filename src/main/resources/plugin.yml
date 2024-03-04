@@ -1,0 +1,10 @@
+name: Seasons
+version: '1.0'
+main: me.aquaponics.seasons.Seasons
+api-version: '1.20'
+commands:
+  setseason:
+    description: Set the season (winter, summer, fall, or spring)
+    usage: /<command> <season>
+    aliases:
+      - season
