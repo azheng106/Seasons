@@ -18,7 +18,7 @@ import org.bukkit.event.player.PlayerInteractEvent;
 
 import java.util.*;
 
-public class CropGrowthListener implements Listener {
+public class CropGrowthListener implements Listener{
     private final SeasonManager seasonManager;
     HashMap<Location, UUID> cropPlanters = new HashMap<>();
 
@@ -66,7 +66,8 @@ public class CropGrowthListener implements Listener {
         Random random = new Random();
         int rand = random.nextInt(100) + 1; // Generate a random number from 1-100
 
-        UUID planterUUID = cropPlanters.get(e.getBlock().getLocation()); // Get the UUID of the player who planted the growing crop
+        // Get the UUID of the player who planted the growing crop
+        UUID planterUUID = cropPlanters.get(e.getBlock().getLocation());
         Player planter = Bukkit.getPlayer(planterUUID);
 
         if (cropsAffected.contains(e.getBlock().getType())) {

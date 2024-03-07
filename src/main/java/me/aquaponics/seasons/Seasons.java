@@ -2,6 +2,7 @@ package me.aquaponics.seasons;
 
 import me.aquaponics.seasons.commands.SetSeasonCommand;
 import me.aquaponics.seasons.listeners.CropGrowthListener;
+import me.aquaponics.seasons.listeners.MobSpawnListener;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
@@ -43,5 +44,6 @@ public final class Seasons extends JavaPlugin {
         }, 0L, 24000L); // 24000 ticks = 20 minutes = 1 in-game day
 
         getServer().getPluginManager().registerEvents(new CropGrowthListener(seasonManager), this);
+        getServer().getPluginManager().registerEvents(new MobSpawnListener(seasonManager), this);
     }
 }

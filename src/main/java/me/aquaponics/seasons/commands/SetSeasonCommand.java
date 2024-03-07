@@ -23,13 +23,13 @@ public class SetSeasonCommand implements CommandExecutor {
             if (commandSender instanceof Player p) {
                 p.sendMessage("Specify a season");
             }
-            return false;
+            return true;
         }
         if (args.length > 1) {
             if (commandSender instanceof Player p) {
                 p.sendMessage("Too many arguments");
             }
-            return false;
+            return true;
         }
         if (args[0].equalsIgnoreCase("FALL")) {
             args[0] = "AUTUMN";
