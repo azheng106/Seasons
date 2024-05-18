@@ -5,4 +5,4 @@ Intended features:
 - Custom mob drops
 - Custom weather
 
-Progress documented in a youtube series: https://www.youtube.com/watch?v=B_xUVBcCuJU
+Progress documented in a youtube series: https://www.youtube.com/watch?v=B_xUVBcCuJU&list=PLMNoRcDfWXZ9VcYEfQyDaQmcLh-OydQuA
